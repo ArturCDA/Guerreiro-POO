@@ -73,15 +73,19 @@ public class Guerreiro {
         if (ag == 1) {
             oponente.decremento();
             if (oponente.getenergia() == 0) {
+                System.out.println("Guerreiro Venceu");
                 return;
             }
-        }
+        } 
 
         if (ao == 1) {
             decremento();
             if (energia == 0) {
+                System.out.println("Oponente Venceu");
                 return;
             }
+        } else if (ag == 0 && ao == 0){
+            System.out.println("Não houve acerto");
         }
 
         lutarR(oponente);
